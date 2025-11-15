@@ -1,6 +1,7 @@
 public with sharing class PS_CurrencyAPIService {
     public static void getExchangeRate(){
         HttpRequest httpReq = new HttpRequest();
+        // this is public api for currency exchange rate
         httpReq.setEndpoint('https://api.exchangerate-api.com/v4/latest/USD');
         httpReq.setMethod('GET');
         httpReq.setHeader('Content-Type', 'application/json');
